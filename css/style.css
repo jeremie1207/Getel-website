@@ -1,0 +1,345 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFEDDA;
+    color : white;
+}
+
+
+p{
+    font-size: small;
+}
+
+header p{
+    font-size: medium;
+}
+
+/**
+* header
+*/
+.header{
+    background-color: #3DB2FF;
+    text-transform: uppercase;
+}
+
+/*
+ page container
+*/
+
+.max_width{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1300px; 
+}
+
+/*
+ navigation bar styles
+*/
+
+.nav_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.nav_menu ul li{
+
+    text-align: center;
+    display: block;
+}
+
+.nav_menu ul li a {
+    color : white;
+    text-decoration: none;
+    padding: .5em;
+    display: block;
+    
+}
+
+.nav_menu ul li:hover, .nav_menu ul li:active{
+    background-color: #2196F3;
+  
+}
+
+/*
+ Hide logo
+*/
+
+.logo{
+    display: none;
+}
+
+/*
+  main 
+*/
+
+
+
+
+
+.main {
+    color : black;
+}
+.title {
+    font-weight: bold;
+    
+}
+img{
+    width: 100%;
+}
+
+
+
+.partener{
+
+    justify-content: center;
+    color: black;
+    margin-top: 3em;
+    
+
+}
+
+.half_container{
+    margin: 2em auto;
+}
+
+.grid{
+    display: grid;
+}
+
+
+
+
+/*
+flex-box proprities
+*/
+
+.flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+
+.Huawei-Logo_container, .heliosTowersLogo_container, .orange_logo_container, .vodacom_logo_container
+, .total_logo_container, .bureau_veritas_container{
+    width: 25%;
+    margin: 1em;
+    max-width: 7.5em;
+}
+.heliosTowersLogo_container{
+   margin: auto 1em;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+.parteners_side{
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding-top: .1em;
+    margin-top: 2em;
+    
+}
+.max_width{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1300px; 
+}
+.center_elements{
+    text-align: center;
+}
+.icons{
+    font-size: 2em;
+    margin: 0 .1em;
+}
+.footer{
+    margin: 0;
+    background-color: #FFB830;
+    padding: 2em;
+}
+
+.footer a{
+    color: #FFEDDA;
+    text-decoration: none;
+}
+
+.langue:hover{
+    text-decoration: underline;
+}
+
+.icons:hover{
+    color: white;
+}
+
+/*forms*/
+
+.input{
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    padding: .5em 1em;
+    margin: .5em 0;
+    border: 1px none;
+    width: 90%;
+}
+
+.message{
+    min-height: 7em;
+    overflow-y: auto;
+    resize: vertical;
+}
+
+.btn{
+    border-radius: 5px;
+    background-color: #FFB830;
+    color: white;
+    padding: .5em 1em;
+    border:none;
+}
+
+.btn:hover{
+    background-color: #FFC900;
+}
+
+.main_contact{
+    justify-content: space-between;
+}
+
+.main_contact a{
+    text-decoration: none;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.figure{
+    width: 100%;
+    text-align: center;
+    transition: width .75s;
+}
+
+.figure img{
+    border: double 2px black;
+    padding: 1em;
+}
+figcaption{
+    background-color: #3DB2FF;
+    padding: 1em;
+    width: 100%;
+    font-style: italic;
+    color: #FFEDDA;;
+}
+
+
+
+
+
+/**Responsive*/
+
+
+@media screen and (min-width: 700px){
+   
+    .container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .max_width{
+        width: 90%;
+    }
+
+    /* 
+     header
+    */
+    
+
+    .nav_menu ul{
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    .logo{
+        display: block;
+    }
+
+    .logo{
+        margin: auto 0;
+    }
+
+    .logo {
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        padding: .5em;
+        padding-left: 0;
+    }
+    .logo:hover {
+        background-color: #2196F3;
+    }
+
+    /*
+     main
+    */
+    
+    .antenne_image{
+        margin-top: 1.7em;
+    }
+
+    .half_container{
+        width: 50%;
+    }
+    .margin_left_zero{
+        margin-left: 0;
+    }
+
+    
+
+
+
+    /*contact page*/
+    .main_contact{
+        flex-direction: row;
+    }
+    .input{
+        width: 50%;
+    }
+
+    .figure{
+        width: 33%;
+    }
+
+    figure:hover{
+        width: 40%;
+    }
+
+    /*grid container*/
+
+    .grid_container_home{
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        gap: 5%;
+        grid-template-rows: 2% 1fr;
+    }
+    
+
+    
+}
+
